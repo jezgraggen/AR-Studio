@@ -10,24 +10,24 @@
 
     </head>
     <style>
-    .arjs-loader {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .arjs-loader {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
-     .arjs-loader div {
-        text-align: center;
-        font-size: 1.25em;
-        color: white;
-      }
+         .arjs-loader div {
+            text-align: center;
+            font-size: 1.25em;
+            color: white;
+          }
     </style>
             
     <body style="margin: 0; overflow: hidden;">
@@ -45,47 +45,39 @@
             embedded
             gesture-detector
         >
-        <a-nft
-          type="nft"
-          url="https://jezgraggen.github.io/AR-Studio/assets/MarkerMoon"
-          smooth="true"
-          smoothCount="10"
-          smoothTolerance=".01"
-          smoothThreshold="5"
-       >
-            <a-assets>
-                <a-asset-item
-                    id="animated-asset"
-                    src="assets/asset.glb"
-                ></a-asset-item>
-            </a-assets>
-
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+            <a-nft
+                  type="nft"
+                  url="https://jezgraggen.github.io/AR-Studio/assets/MarkerMoon"
+                  smooth="true"
+                  smoothCount="10"
+                  smoothTolerance=".01"
+                  smoothThreshold="5"
             >
-                <!--<a-entity
-                    id="bowser-model"
-                    scale="0.3000000000000014 0.3000000000000014 0.3000000000000014"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
-    
-                <a-video src="https://res.cloudinary.com/creative-web-solutions-llc/video/upload/v1555785951/VRAssets/Crake_Elegy.mp4" width="2" height="1.2" scale="2 2 2" opacity="0.65" rotation="90 0 0"> <!-- -->
-    </a-video>
--->
-          <a-image src="https://jezgraggen.github.io/AR-Studio/assets/riff_mit_korallen.jpg" rotation="90 0 180"></a-image>
-          </a-marker>
-      </a-nft>
-            <a-entity camera></a-entity>
+         <!--      
+                <a-assets>
+                    <a-asset-item
+                        id="animated-asset"
+                        src="assets/asset.glb"
+                        >
+                    </a-asset-item>
+                </a-assets>
+
+                <a-marker
+                    id="animated-marker"
+                    type="pattern"
+                    preset="custom"
+                    url="assets/marker.patt"
+                    raycaster="objects: .clickable"
+                    emitevents="true"
+                    cursor="fuse: false; rayOrigin: mouse;"
+                    id="markerA"
+               >
+                        -->
+
+                  <a-image src="https://jezgraggen.github.io/AR-Studio/assets/riff_mit_korallen.jpg" rotation="90 0 180"></a-image>
+                </a-marker>
+             </a-nft>
+           <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
