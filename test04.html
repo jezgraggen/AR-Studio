@@ -6,9 +6,36 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-    </head>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js">
 
+    </head>
+    <style>
+    .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+     .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+      }
+    </style>
+            
     <body style="margin: 0; overflow: hidden;">
+        <div class="arjs-loader">
+            <div>Loading, please wait...</div>
+        </div>
+
+
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -18,6 +45,14 @@
             embedded
             gesture-detector
         >
+        <a-nft
+          type="nft"
+          url="https://jezgraggen.github.io/AR-Studio/assets/MarkerMoon"
+          smooth="true"
+          smoothCount="10"
+          smoothTolerance=".01"
+          smoothThreshold="5"
+       >
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
@@ -43,13 +78,13 @@
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-
+    
                 <a-video src="https://res.cloudinary.com/creative-web-solutions-llc/video/upload/v1555785951/VRAssets/Crake_Elegy.mp4" width="2" height="1.2" scale="2 2 2" opacity="0.65" rotation="90 0 0"> <!-- -->
     </a-video>
 -->
           <a-image src="https://jezgraggen.github.io/AR-Studio/assets/riff_mit_korallen.jpg" rotation="90 0 180"></a-image>
           </a-marker>
-
+      </a-nft>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
