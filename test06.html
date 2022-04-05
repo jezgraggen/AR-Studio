@@ -1,8 +1,8 @@
 <!doctype HTML>
 <html>
     <head>
-      <script src="https://makerspace-giessen.de/objects/aframe-v1.0.4.min.js"></script>
-      <script src="https://makerspace-giessen.de/objects/aframe-ar.min.js"></script>
+      <!--<script src="https://makerspace-giessen.de/objects/aframe-v1.0.4.min.js"></script>
+      <script src="https://makerspace-giessen.de/objects/aframe-ar.min.js"></script> -->
       
       <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
       <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -27,13 +27,13 @@
           >
       -->
         
-    <!-- braucht es Licht?
+    <!-- braucht es Licht? -->
       <a-entity light="type: ambient; color: #fff; intensity: 0.8"></a-entity> 
       <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-1 1 1"></a-entity>
       <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="1 1 1"></a-entity>  
       <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="1 -1 1"></a-entity> 
       <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-1 -1 1"></a-entity>    
-    -->
+    <!-- -->
       
         <!-- von Studio
             <a-assets>
@@ -46,7 +46,7 @@
         
       <!-- 0 -> Original -->         
       <a-marker type="barcode" value="0">
-        <a-entity gltf-model="url(/moveBlock.glb)" scale="1 1 1"></a-entity>
+        <a-entity gltf-model="url(/moveBlock.glb)" scale="5 5 5"></a-entity>
       </a-marker>  
         
       <!-- 1 -->
