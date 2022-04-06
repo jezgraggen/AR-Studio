@@ -13,7 +13,14 @@
   
     <body style="margin: 0; overflow: hidden;">
     
-      <a-scene embedded arjs="trackingMethod: best; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_bch_13_9_3; maxDetectionRate: 10; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
+      <a-scene 
+       embedded arjs="trackingMethod: best; 
+       debugUIEnabled: false; 
+       detectionMode: mono_and_matrix; 
+       matrixCodeType: 4x4_bch_13_9_3; 
+       maxDetectionRate: 10; 
+       sourceWidth:1280; sourceHeight:960; 
+       displayWidth: 1280; displayHeight: 960;">
 
       <!-- Alternative ohne Marker:
           <a-scene
@@ -52,7 +59,7 @@
       <!-- 1 -->
       <a-marker type="barcode" value="1">
         <!-- entity? <a-entity gltf-model="url(/moveBlock.glb)" scale="1 1 1"></a-entity> -->
-        <a-video src="https://jezgraggen.github.io/AR-Studio/assets/CoolTricks__aL29yNv_460sv_ZachKing.mp4" width="2" height="1.2" scale="2 2 2" opacity="0.65" rotation="90 0 0">
+        <a-video preload="metadata" src="https://jezgraggen.github.io/AR-Studio/assets/CoolTricks__aL29yNv_460sv_ZachKing.mp4" width="2" height="1.2" scale="2 2 2" opacity="0.65" rotation="90 0 0">
       </a-marker>
         
         
